@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background-image: url("https://images6.alphacoders.com/121/thumb-1920-1217194.png");
+  background-repeat: no-repeat;
+  width:100%;
+  min-height: 100vh;
+  background-size: cover;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
