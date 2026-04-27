@@ -322,3 +322,65 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+
+.proj-imgbx {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s ease-in-out;
+}
+
+/* Overlay */
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.proj-txtx h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.proj-txtx span {
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Hover effect */
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+
+.proj-imgbx:hover img {
+  transform: scale(1.1);
+}
+
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
