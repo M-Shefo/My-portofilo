@@ -1,15 +1,10 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-   background-image: url("https://images6.alphacoders.com/121/thumb-1920-1217194.png");
-  background-repeat: no-repeat;
-  width:100%;
-  min-height: 100vh;
+  background-image: url('./components/Navbar/assets/dark-purple-3840x2160-17330.png'); /* put image in public/ folder */
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps it fixed while scrolling */
+  min-height: 100vh;
 }
 
 
