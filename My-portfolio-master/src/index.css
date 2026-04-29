@@ -1,0 +1,19 @@
+body {
+  background-image: url('./components/Navbar/assets/dark-purple-3840x2160-17330.png'); /* put image in public/ folder */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps it fixed while scrolling */
+  min-height: 100vh;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}

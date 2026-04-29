@@ -1,0 +1,106 @@
+/* ── Navbar base ── */
+.navbar {
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: black;
+}
+
+/* ── Logo ── */
+.Icons {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Icons:hover {
+  transform: scale(1.1);
+}
+
+/* ── Nav pushed to right of logo ── */
+.navbar .ms-auto {
+  margin-left: 16px !important;
+  margin-right: auto !important;
+}
+
+/* ── Nav links ── */
+.navbar-link {
+  color: #333 !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 4px;
+  padding: 6px 14px !important;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: black;
+  background-color: rgba(13, 110, 253, 0.08);
+}
+
+.navbar-link.active {
+  color:black;
+  background-color: rgba(13, 110, 253, 0.12);
+  font-weight: 600;
+}
+
+/* ── Social icons ── */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 16px;
+}
+
+/* ── Connect button ── */
+button {
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
+
+button span {
+  pointer-events: none;
+}
+
+/* ── Layout ── */
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-icons {
+    margin: 0 auto;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+}
